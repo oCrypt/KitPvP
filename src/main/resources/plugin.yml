@@ -1,0 +1,11 @@
+name: KitPvPCore
+version: '${project.version}'
+main: me.cahrypt.kitpvpcore.KitPvPCore
+api-version: 1.19
+authors: [ cahrypt ]
+description: KitPvP plugin for minecraft servers
+commands:
+  spawn:
+    usage: /spawn
+  stats:
+    usage: /stats [player]
