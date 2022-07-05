@@ -4,7 +4,7 @@ import me.cahrypt.kitpvpcore.KitPvPCore;
 import me.cahrypt.kitpvpcore.effects.KitPotionEffect;
 import me.cahrypt.kitpvpcore.item.items.ItemBuilder;
 import me.cahrypt.kitpvpcore.kit.Kit;
-import me.cahrypt.kitpvpcore.kit.anotation.PassiveAbility;
+import me.cahrypt.kitpvpcore.kit.annotation.PassiveAbility;
 import me.cahrypt.kitpvpcore.kit.loadout.Loadout;
 import me.cahrypt.kitpvpcore.player.KitPlayer;
 import me.cahrypt.kitpvpcore.player.KitPlayerManager;

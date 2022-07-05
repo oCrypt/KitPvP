@@ -1,4 +1,4 @@
-package me.cahrypt.kitpvpcore.kit.anotation;
+package me.cahrypt.kitpvpcore.kit.annotation;
 
 import me.cahrypt.kitpvpcore.item.items.KitCoreItems;
 
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TriggerAbility {
+public @interface SpecificInteractAtPlayerAbility {
     KitCoreItems.AbilityItems listenItem();
 }

@@ -1,10 +1,10 @@
 package me.cahrypt.kitpvpcore.kit;
 
 import me.cahrypt.kitpvpcore.KitPvPCore;
-import me.cahrypt.kitpvpcore.kit.anotation.InteractAtPlayerAbility;
-import me.cahrypt.kitpvpcore.kit.anotation.PassiveAbility;
-import me.cahrypt.kitpvpcore.kit.anotation.SpecificInteractAtPlayerAbility;
-import me.cahrypt.kitpvpcore.kit.anotation.TriggerAbility;
+import me.cahrypt.kitpvpcore.kit.annotation.InteractAtPlayerAbility;
+import me.cahrypt.kitpvpcore.kit.annotation.PassiveAbility;
+import me.cahrypt.kitpvpcore.kit.annotation.SpecificInteractAtPlayerAbility;
+import me.cahrypt.kitpvpcore.kit.annotation.TriggerAbility;
 import me.cahrypt.kitpvpcore.kit.loadout.Loadout;
 import me.cahrypt.kitpvpcore.game.region.RegionManager;
 import me.cahrypt.kitpvpcore.listener.AListener;
