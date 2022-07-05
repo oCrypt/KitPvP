@@ -10,36 +10,36 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class Timer {
-    private int cooldown;
-    private final BukkitTask cooldownTask;
+    private int time;
+    private final BukkitTask timerTask;
 
     public Timer(KitPlayer kitPlayer, int timerSeconds, Consumer<KitPlayer> onFinishConsumer, BiConsumer<KitPlayer, Integer> actionPerSecondConsumer) {
-        this.cooldown = timerSeconds;
-        this.cooldownTask = new BukkitRunnable() {
+        this.time = timerSeconds;
+        this.timerTask = new BukkitRunnable() {
             @Override
             public void run() {
-                actionPerSecondConsumer.accept(kitPlayer, cooldown);
+                actionPerSecondConsumer.accept(kitPlayer, time);
 
-                if (cooldown == 0) {
+                if (time == 0) {
                     onFinishConsumer.accept(kitPlayer);
                     cancel();
                     return;
                 }
 
-                cooldown -= 1;
+                time -= 1;
             }
         }.runTaskTimer(JavaPlugin.getPlugin(KitPvPCore.class), 0, 20);
     }
 
     public boolean isCancelled() {
-        return cooldownTask.isCancelled();
+        return timerTask.isCancelled();
     }
 
-    public int getCooldownTime() {
-        return cooldown;
+    public int getTime() {
+        return time;
     }
 
     public void cancel() {
-        cooldownTask.cancel();
+        timerTask.cancel();
     }
 }
